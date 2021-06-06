@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Individual Submissions/Nipun_Kumar/src/main/java"/>
+	<classpathentry kind="src" path="Individual Submissions/Nipun_Kumar/src/test/java"/>
+	<classpathentry kind="src" path="Individual Submissions/Prafull/src/main/java"/>
+	<classpathentry kind="src" path="Individual Submissions/Prafull/src/test/java"/>
+	<classpathentry kind="src" path="Individual Submissions/Rishab/src/main/java"/>
+	<classpathentry kind="src" path="Individual Submissions/Rishab/src/test/java"/>
+	<classpathentry kind="src" path="Individual Submissions/vishwajeet/src/main/java"/>
+	<classpathentry kind="src" path="Individual Submissions/vishwajeet/src/test/java"/>
+	<classpathentry kind="output" path="Individual Submissions/Nipun_Kumar/out/production/main"/>
+</classpath>
