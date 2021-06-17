@@ -39,7 +39,7 @@ public class Runner {
 		
 		System.out.println("--help--Input format should be as below");
 		System.out.println();
-		System.out.println("java -jar passgen -l");
+		System.out.println("java -jar passgen.jar -l");
 		System.out.println("(where l= length of password)");
 		System.out.println();
 	}
