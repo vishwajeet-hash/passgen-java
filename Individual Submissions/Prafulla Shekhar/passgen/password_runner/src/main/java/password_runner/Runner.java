@@ -9,13 +9,17 @@ public class Runner {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
 
-		int n = 4;
+		int n = 8;
 
 		try {
 
-			String str = args[0];
-			String strlen = str.substring(1);
-			n = Integer.parseInt(strlen);
+			if (args[0].isEmpty()) {
+				n = 8;
+			} else {
+				String str = args[0];
+				String strlen = str.substring(1);
+				n = Integer.parseInt(strlen);
+			}
 
 			if (n < 4)
 				n /= 0;
@@ -28,15 +32,21 @@ public class Runner {
 			System.out.println("** minimum password length supported is 4 **");
 			help();
 
+		} catch (ArrayIndexOutOfBoundsException e) {
+
+			String password = Password_creater.getPassword(8);
+			System.out.println("Password: " + password);
+
 		} catch (Exception e) {
 
 			help();
+
 		}
 
 	}
 
 	public static void help() {
-		
+
 		System.out.println("--help--Input format should be as below");
 		System.out.println();
 		System.out.println("java -jar passgen.jar -l");
