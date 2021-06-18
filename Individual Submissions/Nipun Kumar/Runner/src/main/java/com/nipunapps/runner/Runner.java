@@ -2,35 +2,10 @@ package com.nipunapps.runner;
 
 import com.nipunapps.library.GetPassword;
 
+import java.util.Scanner;
+
 public class Runner {
     public static void main(String[] args) {
-////        when we directly call the password generator class it will return a 8
-////        digit upper and lower case password
-//
-//    	GetPassword getPassword=new GetPassword();
-//    	String defaultPassword=getPassword.generatePassword();
-//    	System.out.println("Password with default constructor : "+defaultPassword);
-//
-////    	GetPassword class can receive 4 constructor of boolean useUpper,useLower,useNumber and useSpecialChar
-//
-//    	GetPassword cgetPass=new GetPassword(true,true,true,false);
-//
-//    	String pass_without_specialChar=cgetPass.generatePassword(); // the length of password is currently 8
-//    	System.out.println("Password without special char : "+pass_without_specialChar);
-//
-////    	We can set length of password by calling method setlength
-//    	cgetPass.setLength(10);
-//    	String password_of_length_10=cgetPass.generatePassword();
-//    	System.out.println("Password with length of 10 : "+password_of_length_10);
-//
-////    	We can set the cases used in generating the password like this
-//
-//		cgetPass.setUseSpecialChar(true);
-//		cgetPass.setUseDigit(false);
-//		cgetPass.setUseUpper(false);
-//		String pass=cgetPass.generatePassword();
-//		System.out.println("Password with lower and special char : "+pass);
-
 		int length;
 		GetPassword passwordGenerator=new GetPassword();
 		try{
@@ -42,16 +17,30 @@ public class Runner {
 			else if(args.length==1) {
 				 if (args[0].equals("-h")) {
 					printHelp();
-				} else {
-					String strlen = args[0];
-					length = Integer.parseInt(strlen.substring(1));
-					passwordGenerator.setLength(length);
-					System.out.println("The password is : " + passwordGenerator.generatePassword());
-				}
+				} else if (args[0].equals("-l")) {
+
+				 	System.out.println("Enter the length of password");
+					 Scanner scanner=new Scanner(System.in);
+					 length=scanner.nextInt();
+					 passwordGenerator.setLength(length);
+					 System.out.println("The password is : " + passwordGenerator.generatePassword());
+				 } else {
+					 String strlen = args[0];
+					 length = Integer.parseInt(strlen.substring(1));
+					 passwordGenerator.setLength(length);
+					 System.out.println("The password is : " + passwordGenerator.generatePassword());
+				 }
 			}
 			else{
-				String strlen = args[0];
-				length = Integer.parseInt(strlen.substring(1));
+				if(args[0].equals("-l")){
+					System.out.println("Enter the length of password");
+					Scanner scanner=new Scanner(System.in);
+					length=scanner.nextInt();
+				}
+				else {
+					String strlen = args[0];
+					length = Integer.parseInt(strlen.substring(1));
+				}
 				passwordGenerator.setLength(length);
 					if(args[1].length()!=5){
 						help();
