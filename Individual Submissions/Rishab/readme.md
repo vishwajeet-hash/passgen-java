@@ -16,7 +16,7 @@ This generates a set of random passwords in the Terminal.
 
 ### Features
  - This tool generates an user **customized** password. User can enter the total number of random passwords,length of password.
- - Random Passwords will be generated in the terminal and user can  select and copy using ``ctrl + shift + c or ctrl + shift
+ - Random Passwords will be generated in the terminal and it will be copied to clipboard automatically.
  
 
 ### Usage
