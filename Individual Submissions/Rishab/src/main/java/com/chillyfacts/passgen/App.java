@@ -2,6 +2,7 @@ package com.chillyfacts.passgen;
 import java.awt.Toolkit;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
+import java.io.IOException;
 import java.util.Scanner;
 
 /**
@@ -12,12 +13,14 @@ public class App
 
 {
 	//function to print the randomly generated passwords
-	private static void printArray(String[] arr) {
+	private static void printArray(String[] arr) throws IOException {
         for(int i = 0; i < arr.length; i++) {
         	StringSelection stringSelection = new StringSelection(arr[i]);
 
     		Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
     		clipboard.setContents(stringSelection, null);
+    		Runtime runtime = Runtime.getRuntime();
+    	    Process p = runtime.exec(new String[] { "sh", "-c", "echo" + arr[i] + " | xclip -selection clipboard" });
             System.out.println(arr[i]);
         }
     }
