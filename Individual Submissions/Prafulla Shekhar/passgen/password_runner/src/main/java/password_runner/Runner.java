@@ -49,28 +49,32 @@ public class Runner {
 	}
 
 	// function to print password and get it copied in clipboard
-	public static void printpass(int n) {
+	public static void printpass(int n) throws IOException {
 
 		// generates the random password
 		String password = Password_creater.getPassword(n);
+		System.out.println("Password: " + password);
 
 		StringSelection stringSelection = new StringSelection(password);
 
+		// copy to clipboard
 		Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
 		clipboard.setContents(stringSelection, null);
 
-		System.out.println("Password: " + password);
+		// copy to xclip
+		Runtime runtime = Runtime.getRuntime();
+		Process p = runtime.exec(new String[] { "sh", "-c", "echo" + password + " | xclip -selection clipboard" });
 
 	}
 
 	// function to print the help statements
 	public static void help() {
 
-		System.out.println("--help--Input format should be as below");
-		System.out.println();
-		System.out.println("java -jar passgen.jar -l");
-		System.out.println("(where l= length of password)");
-		System.out.println();
+		System.out.println("--help--Input format should be as below" + 
+		                   "\njava -jar passgen.jar -l" +  
+				           "\n" +
+				           "\njava -jar passgen.jar -l" + "\n(where l= length of password)" + 
+				           "\n");
 
 	}
 
