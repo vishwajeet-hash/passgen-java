@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuite tests="1" failures="0" name="com.chillyfacts.passgen.AppTest" time="0.006" errors="0" skipped="0">
   <properties>
@@ -63,4 +64,5 @@
     <property name="sun.cpu.isalist" value=""/>
   </properties>
   <testcase classname="com.chillyfacts.passgen.AppTest" name="testApp" time="0.006"/>
+
 </testsuite>
