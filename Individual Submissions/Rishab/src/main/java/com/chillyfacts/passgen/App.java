@@ -1,4 +1,7 @@
 package com.chillyfacts.passgen;
+import java.awt.Toolkit;
+import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.StringSelection;
 import java.util.Scanner;
 
 /**
@@ -11,6 +14,10 @@ public class App
 	//function to print the randomly generated passwords
 	private static void printArray(String[] arr) {
         for(int i = 0; i < arr.length; i++) {
+        	StringSelection stringSelection = new StringSelection(arr[i]);
+
+    		Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+    		clipboard.setContents(stringSelection, null);
             System.out.println(arr[i]);
         }
     }
@@ -19,15 +26,20 @@ public class App
 	 * 
 	 */
 	private static char randomCharacter() {
-        int rand = (int)(Math.random()*62);
+        int rand = (int)(Math.random()*77);
         if(rand <= 9) {
             int number = rand + 48;
             return (char)(number);
-        } else if(rand <= 35) {
-            int uppercase = rand + 55;
+        }
+        else if(rand <= 24) {
+            int  special = rand +23;
+            return (char)(special);
+        }
+        else if(rand <=50 ) {
+            int uppercase = rand + 40;
             return (char)(uppercase);
-        } else {
-            int lowercase = rand + 61;
+            }else {
+            int lowercase = rand +46 ;
             return (char)(lowercase);
         }
     }
