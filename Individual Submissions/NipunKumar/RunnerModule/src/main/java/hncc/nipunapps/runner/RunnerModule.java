@@ -237,6 +237,9 @@ public class RunnerModule {
 //		taking password in a string
         String password= passwordGenerator.generatePassword();
 
+        /* For copying in windows
+         * This will copy the password in clipboard in windows
+         */
 //		Initialising the toolkit and clipboard
         Toolkit toolkit = Toolkit.getDefaultToolkit();
         Clipboard clipboard = toolkit.getSystemClipboard();
@@ -244,5 +247,18 @@ public class RunnerModule {
 //		clipboard.setContents takes to argument 1st is the string which has to store and 2nd is the name of clipboard owner
         StringSelection selection=new StringSelection(password);
         clipboard.setContents(selection,null);
+
+        /* For copying in linux distribution
+         * This will copy the password in xclip in linux
+         */
+        Runtime runtime=Runtime.getRuntime();
+        Process p=null;
+        try {
+            p=runtime.exec(new String[]{"sh","-c","echo"+password+" | xclip -selection clipboard"});
+        }
+        catch (Exception e){
+            System.out.println(e);
+        }
+        System.out.println("Password copied into clipboard");
     }
 }
