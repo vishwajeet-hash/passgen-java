@@ -15,7 +15,7 @@ Maven is a project management tool which makes our work easier by providing us :
  * Releases
  * Project structure
 and many more.It basically helps the developer from not doing many things manually.<br>
-To know more about Maven follow the [link](https://maven.apache.org/){:target="_blank"}
+To know more about Maven follow the [link](https://maven.apache.org/)
 
  
 
