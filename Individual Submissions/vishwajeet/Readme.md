@@ -46,4 +46,4 @@ This will return a default 8 digit password.
 ## AUTHOR :
 
 #### NAME - Vishwajeet Kumar Singh <br>
-#### Github profile- [Click here](https://github.com/vishwajeet-hash){:target="_blank"}
+#### Github profile- [Click here](https://github.com/vishwajeet-hash)
