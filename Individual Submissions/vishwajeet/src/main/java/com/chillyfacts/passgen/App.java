@@ -38,55 +38,44 @@ public class App
     	
         
         try {
-        if(args[0].equals("-g"))
+        if((args[0].equals("-g")) || args.length!=0)
         {
             int length=8;
             System.out.println(passgen(length));
            
         }
+        
         else if(args[0].equals("-l"))
         {
         	int length=Integer.parseInt(args[1]);
-        	if(length<4)
+        	if(length<4 && length>=1)
         	help();
         	else
         	System.out.println(passgen(length));
         }
         else
         {
-        	System.out.println("passgen -g  ");
-        	System.out.println("passgen -l  ");
-            System.out.println("-g :generates a default password of length 8");
-            System.out.println("-l :generates password of a length that you want but it should be greater than 4.");
-            System.out.println("passgen --help : To know the commands");
-            System.out.println("passgen.jar -g "  );
-            System.out.println("It will generate a default Password of length 8");
-            System.out.println("passgen.jar -l 6 "  );
-            System.out.println("It will generate a Password of length 6");
+        	 int length=8;
+             System.out.println(passgen(length));
         }
         }
         catch (Exception e){
-        	System.out.println("passgen -g  ");
-        	System.out.println("passgen -l  ");
-            System.out.println("-g :generates a default password of length 8");
-            System.out.println("-l :generates password of a length that you want but it should be greater than 4.");
-            System.out.println("passgen --help : To know the commands");
-            System.out.println("passgen.jar -g "  );
-            System.out.println("It will generate a default Password of length 8");
-            System.out.println("passgen.jar -l 6 "  );
-            System.out.println("It will generate a Password of length 6");
+        	 System.out.println("-g :generates a default password of length 8" + 
+        			      "\n-l :generates password of a length that you want but it should be greater than 4."
+        			      +"\npassgen.jar -g " 
+        			      +"\nIt will generate a default Password of length 8"
+        			      +"\npassgen.jar -l 6 "
+        			      +"\nIt will generate a Password of length 6");
+        			        
         }
          
     }
     public static void help() {
-    	System.out.println("passgen -g  ");
-    	System.out.println("passgen -l  ");
-        System.out.println("-g :generates a default password of length 8");
-        System.out.println("-l :generates password of a length that you want but it should be greater than 4.");
-        System.out.println("passgen --help : To know the commands");
-        System.out.println("passgen.jar -g "  );
-        System.out.println("It will generate a default Password of length 8");
-        System.out.println("passgen.jar -l 6 "  );
-        System.out.println("It will generate a Password of length 6");
+    	System.out.println("-g :generates a default password of length 8" + 
+			      "\n-l :generates password of a length that you want but it should be greater than 4."
+			      +"\n passgen.jar -g " 
+			      +"\n It will generate a default Password of length 8"
+			      +"\npassgen.jar -l 6 "
+			      +"\nIt will generate a Password of length 6");
     }
 }
