@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="NipunKumar/Generator/src/main/java"/>
+	<classpathentry kind="src" path="NipunKumar/RunnerModule/src/main/java"/>
+	<classpathentry kind="src" path="Prafulla Shekhar/passgen/password_generator/src/main/java"/>
+	<classpathentry kind="src" path="Prafulla Shekhar/passgen/password_runner/src/main/java"/>
+	<classpathentry kind="src" path="Rishab/src/main/java"/>
+	<classpathentry kind="src" path="Rishab/src/test/java"/>
+	<classpathentry kind="src" path="vishwajeet/src/main/java"/>
+	<classpathentry kind="src" path="vishwajeet/src/test/java"/>
+	<classpathentry kind="lib" path="NipunKumar/Generator/target/Generator-0.0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="NipunKumar/nipunpassgen.jar"/>
+	<classpathentry kind="lib" path="NipunKumar/RunnerModule/target/RunnerModule-0.0.1-SNAPSHOT-jar-with-dependencies.jar"/>
+	<classpathentry kind="lib" path="NipunKumar/RunnerModule/target/RunnerModule-0.0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="Prafulla Shekhar/passgen/passgen.jar"/>
+	<classpathentry kind="lib" path="Prafulla Shekhar/passgen/password_generator/target/password_generator-0.0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="Prafulla Shekhar/passgen/password_runner/target/password_runner-0.0.1-SNAPSHOT-jar-with-dependencies.jar"/>
+	<classpathentry kind="lib" path="Prafulla Shekhar/passgen/password_runner/target/password_runner-0.0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="Rishab/target/passgen.jar"/>
+	<classpathentry kind="lib" path="vishwajeet/target/passgen-0.0.1-SNAPSHOT.jar"/>
+	<classpathentry kind="output" path="NipunKumar/Generator/target/classes"/>
+</classpath>
