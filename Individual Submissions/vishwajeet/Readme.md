@@ -9,11 +9,11 @@
 ## Why maven?
 
 Maven is a project management tool which makes our work easier by providing us :
- *Builds
- *Documentation
- *Dependencies
- *Releases
- *Project structure
+ * Builds
+ * Documentation
+ * Dependencies
+ * Releases
+ * Project structure
 and many more.It basically helps the developer from not doing many things manually.<br>
 To know more about Maven follow the [link](https://maven.apache.org/){:target="_blank"}
 
@@ -45,5 +45,5 @@ This will return a default 8 digit password.
 
 ##AUTHOR :
 
-####NAME - Vishwajeet Kumar Singh
+####NAME - Vishwajeet Kumar Singh <br>
 ####Github profile- [Click here](https://github.com/vishwajeet-hash){:target="_blank"}
