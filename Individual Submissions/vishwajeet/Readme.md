@@ -27,17 +27,18 @@ To know more about Maven follow the [link](https://maven.apache.org/)
 
  * For using the tool you need to download passgen-0.0.1-SNAPSHOT.jar file<br>or simply clone the repository and go to individual Submission/vishwajeet/target
 
-* In the directory where passgen-0.0.1-SNAPSHOT.jar is present open terminal and simply run either of these two commands:
+* In the directory where passgen-0.0.1-SNAPSHOT.jar is present open terminal and simply run this commands:
+ ```java
  java -jar passgen-0.0.1-SNAPSHOT.jar -g
- java -jar passgen-0.0.1-SNAPSHOT.jar
+ ```
  
 This will return a default 8 digit password.
 ![example](https://github.com/vishwajeet-hash/passgen-java/blob/passgen-project/Individual%20Submissions/vishwajeet/images/output1.PNG)
 
 * You can generate a desired length of password by setting a flag "-l" and giving the desired length
->
- java -jar passgen-0.0.1-SNAPSHOT.jar -l 9
-
+```java
+  java -jar passgen-0.0.1-SNAPSHOT.jar -l 9
+```
 ![example](https://github.com/vishwajeet-hash/passgen-java/blob/passgen-project/Individual%20Submissions/vishwajeet/images/output2.PNG)
 
 ---
