@@ -21,7 +21,7 @@ To know more about Maven follow the [link](https://maven.apache.org/){:target="_
 
 ### Prerequisite :
 
-*For compilation of the class your system must install java-jdk 8.0 or above and proper setup of JAVA_HOME environment. For run the jar file you must have jre 1.8 or above.
+* For compilation of the class your system must install java-jdk 8.0 or above and proper setup of JAVA_HOME environment. For run  the jar file you must have jre 1.8 or above.
 
 ### How To Use
 
@@ -43,7 +43,7 @@ This will return a default 8 digit password.
 ---
 ---
 
-##AUTHOR :
+## AUTHOR :
 
-####NAME - Vishwajeet Kumar Singh <br>
-####Github profile- [Click here](https://github.com/vishwajeet-hash){:target="_blank"}
+#### NAME - Vishwajeet Kumar Singh <br>
+#### Github profile- [Click here](https://github.com/vishwajeet-hash){:target="_blank"}
