@@ -1,4 +1,4 @@
-! [passgen](images\Strong-Password-Generator.jpg)
+![passgen](images\Strong-Password-Generator.jpg)
 
 # Passgen-java cli/cmd tool 
 
