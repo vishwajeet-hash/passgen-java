@@ -2,12 +2,14 @@
 
 # Passgen-java cli/cmd tool 
 
-*This is a tool created using maven to generate a random password of default length 8. <br>
-*It allows the user to get a password of default length. <br>
-*The password generated is protected and secure and it gets copied to the clipboard by default.<br>
+* This is a tool created using maven to generate a random password of default length 8. <br>
+* It allows the user to get a password of default length. <br>
+* The password generated is protected and secure and it gets copied to the clipboard by default.<br>
 
 ## Why maven?
 
+![passgen](https://github.com/vishwajeet-hash/passgen-java/blob/passgen-project/Individual%20Submissions/vishwajeet/images/maven.jpeg)
+<br>
 Maven is a project management tool which makes our work easier by providing us :
  * Builds
  * Documentation
